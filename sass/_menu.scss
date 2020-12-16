@@ -1,0 +1,35 @@
+#cabecera{
+    background-color: $colorGrisOscuro;
+    border-bottom: 5px solid $colorGrisClaro;
+    .cabecera__contenedor{
+        display: flex;
+        width: 90%;
+        height: 70px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+
+        .cabecera__img{
+            img{
+                height: 40px;
+            }
+        }
+
+        .cabecera__menu{
+            ul{
+                display: flex;
+                
+                a{
+                    margin-left: 15px;
+                    color: $colorBlanco;
+                    &:hover{
+                        color: $colorAzul;
+                        border-bottom: 2px $colorAzul solid;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

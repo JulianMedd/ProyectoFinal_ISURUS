@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $tipografia;
+}
+
+li{
+    list-style: none;
+    a{
+        text-decoration: none;
+    }
+}
+
+h1{
+    font-weight: 600;
+    font-size: 400%;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 200%;
+}
+
+p{
+    font-weight: 500;
+    span{
+        font-weight: 600;
+    }
+}
