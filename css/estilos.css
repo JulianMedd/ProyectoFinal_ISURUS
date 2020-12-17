@@ -34,7 +34,6 @@ p span {
 
 #cabecera {
   background-color: #282828;
-  border-bottom: 5px solid #7f7e8c;
 }
 #cabecera .cabecera__contenedor {
   display: flex;
@@ -47,14 +46,26 @@ p span {
 #cabecera .cabecera__contenedor .cabecera__img img {
   height: 40px;
 }
+#cabecera .cabecera__contenedor .cabecera__menu {
+  line-height: 70px;
+}
 #cabecera .cabecera__contenedor .cabecera__menu ul {
   display: flex;
 }
-#cabecera .cabecera__contenedor .cabecera__menu ul a {
-  margin-left: 15px;
-  color: #ffffff;
+#cabecera .cabecera__contenedor .cabecera__menu ul li {
+  height: 70px;
+  transition: background-color 0.4s;
 }
-#cabecera .cabecera__contenedor .cabecera__menu ul a:hover {
+#cabecera .cabecera__contenedor .cabecera__menu ul li:hover, #cabecera .cabecera__contenedor .cabecera__menu ul li:focus {
+  background-color: #303030;
+  border-bottom: 5px #0692f2 solid;
+}
+#cabecera .cabecera__contenedor .cabecera__menu ul li:hover a {
   color: #0692f2;
-  border-bottom: 2px #0692f2 solid;
+}
+#cabecera .cabecera__contenedor .cabecera__menu ul li a {
+  display: block;
+  margin: 0px 15px;
+  color: #ffffff;
+  transition: color 1s;
 }

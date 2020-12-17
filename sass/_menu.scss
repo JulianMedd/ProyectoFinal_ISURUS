@@ -1,6 +1,6 @@
 #cabecera{
     background-color: $colorGrisOscuro;
-    border-bottom: 5px solid $colorGrisClaro;
+   // border-bottom: 5px solid $colorGrisClaro;
     .cabecera__contenedor{
         display: flex;
         width: 90%;
@@ -16,17 +16,30 @@
         }
 
         .cabecera__menu{
+            line-height: 70px;
             ul{
                 display: flex;
-                
-                a{
-                    margin-left: 15px;
-                    color: $colorBlanco;
-                    &:hover{
+
+                li{
+                    height: 70px;
+                    transition: background-color 0.4s;
+                    &:hover,
+                    &:focus{
+                        background-color: $colorGrisClaro;
+                        border-bottom: 5px $colorAzul solid;
+                    }
+                    &:hover a{
                         color: $colorAzul;
-                        border-bottom: 2px $colorAzul solid;
+                    }
+
+                    a{
+                        display: block;
+                        margin: 0px 15px;
+                        color: $colorBlanco;
+                        transition: color 1s;
                     }
                 }
+                
             }
         }
     }
