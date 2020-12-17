@@ -1,13 +1,19 @@
 #cabecera{
     background-color: $colorGrisOscuro;
-   // border-bottom: 5px solid $colorGrisClaro;
+    border-bottom: 5px solid $colorAzulOscuro;
+
     .cabecera__contenedor{
         display: flex;
         width: 90%;
         height: 70px;
+        max-width: 1400px;
         margin: auto;
         justify-content: space-between;
         align-items: center;
+
+        .icon{
+            display: none;
+        }
 
         .cabecera__img{
             img{
@@ -21,8 +27,8 @@
                 display: flex;
 
                 li{
-                    height: 70px;
-                    transition: background-color 0.4s;
+                    height: 75px;
+                    transition:border-bottom, background-color 0.4s;
                     &:hover,
                     &:focus{
                         background-color: $colorGrisClaro;
@@ -45,4 +51,77 @@
     }
 
 
+}
+
+@media screen and (max-width: 1000px){
+    #cabecera{
+        height: 120px;
+        .cabecera__contenedor{
+            flex-direction: column;
+            padding: 15px 0px;
+            .cabecera__menu{
+                ul{
+                    li{
+                        margin-top: 5px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    #cabecera{
+        height: 70px;
+        .cabecera__contenedor{
+            flex-direction: row;
+
+            .icon{
+                display: block;
+            }
+
+            .cabecera__img{
+                img{
+                    height: 30px;
+                }
+            }
+            .cabecera__menu{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                left: 0;
+                top: -100%;
+                background-color: $colorGrisClaro;
+                transition: top 0.6s;
+    
+                ul{
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+    
+                    li{
+                        margin: 20px 0px;
+                        a{
+                            font-size: 20px;
+                        }
+                    }
+                }
+    
+                .close{
+                    position: absolute;
+                    left: 30px;
+                    top: 30px;
+                }
+            }
+
+            #menu:target {
+                display: block;
+                top: 0;
+            }
+        
+        }
+    }
 }
