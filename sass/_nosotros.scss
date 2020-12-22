@@ -1,0 +1,40 @@
+.seccionNosotros{
+    .seccionNosotros__contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+        width: 90%;
+        margin: 100px auto;
+        height: 400px;
+
+        .seccionNosotros__info{
+            text-align: left;
+            width: 50%;
+
+            h1{
+                color: $colorAzul;
+            }
+
+            h2{
+                color: $colorGrisOscuro;
+            }
+
+            p{
+                margin-top: 10%;
+                line-height: 180%;
+                color: #7f7e8c;
+            }
+
+        }
+
+        .seccionNosotros__img{
+            width: 50%;
+            text-align: right;
+
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
