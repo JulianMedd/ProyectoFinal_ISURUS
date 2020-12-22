@@ -31,3 +31,34 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px){
+    .fondoInicio{
+        background-size: cover;
+        height: 800px;
+    }
+
+    #seccionInicio{
+        margin-top: 50px;
+        .seccionInicio__contenedor{
+            width: 90%;
+            margin: auto;
+
+            .seccionInicio__img{
+                img{
+                    width: 30%;
+                }
+            }
+
+            .seccionInicio__texto{
+                h1{
+                    font-size: 300%;;
+                }
+
+                p{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
