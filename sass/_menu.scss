@@ -27,12 +27,12 @@
                 display: flex;
 
                 li{
-                    height: 75px;
+                    height: 70px;
                     transition:border-bottom, background-color 0.4s;
                     &:hover,
                     &:focus{
                         background-color: $colorGrisClaro;
-                        border-bottom: 5px $colorAzul solid;
+                        //border-bottom: 5px $colorAzul solid;
                     }
                     &:hover a{
                         color: $colorAzul;
