@@ -34,6 +34,7 @@
 
 @media screen and (max-width: 1000px){
     .fondoInicio{
+        background-position: top;
         background-size: cover;
         height: 800px;
     }
@@ -52,7 +53,7 @@
 
             .seccionInicio__texto{
                 h1{
-                    font-size: 300%;;
+                    font-size: 300%;
                 }
 
                 p{
