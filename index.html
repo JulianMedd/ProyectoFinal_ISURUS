@@ -11,10 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
 
     <!--Estilos  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body>
-    <header id="cabecera">
+<body class="fondoInicio">
+    <!-- menu -->
+    <header id="cabecera" class="wow animate__animated animate__fadeInDown">
         <div class="cabecera__contenedor">
             <a href="#menu" class="icon">
                 <img src="imagenes/icono_menu.svg" class="open" alt="abrir menu">
@@ -46,5 +49,26 @@
             </nav>
         </div>
     </header>
+
+    <!-- seccion -->
+
+    <section id="seccionInicio">
+        <div class="seccionInicio__contenedor">
+            <article class="seccionInicio__img wow animate__animated animate__fadeInUp">
+                <img src="Imagenes/LogoIsurus.svg" alt="isotipoIsurus">
+            </article>
+            <article class="seccionInicio__texto wow animate__animated animate__fadeInUp">
+                <h1 class="seccionInicio__texto--titulo">SOMOS CAMPEONES</h1>
+                <p class="seccionInicio__texto--parrafo">Hoy, impulsados por el <span>entretenimiento</span>, somos el canal de comunicación ideal entre las marcas más vanguardistas que buscan relacionarse con el <span>público jóven</span>. Ofrecemos liderazgo y profesionalismo dentro de un ambiente altamente cambiante y un know-how inigualable que crece con los años.</p>
+            </article>
+        </div>
+    </section>
+
+<!-- scrip -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 </html>
