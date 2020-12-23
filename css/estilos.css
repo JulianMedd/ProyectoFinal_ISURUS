@@ -235,6 +235,9 @@ p span {
     width: 80%;
   }
 }
+.seccionNosotros {
+  margin: 150px 0px;
+}
 .seccionNosotros .seccionNosotros__contenedor {
   display: flex;
   align-items: center;
