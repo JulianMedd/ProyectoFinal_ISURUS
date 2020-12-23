@@ -1,0 +1,48 @@
+.pie{
+    margin-top: 100px;
+    background-color: $colorGrisOscuro;
+    color: $colorBlanco;
+    border-top: 3px $colorBlanco solid;
+
+    .pie__contenedor{
+        text-align: center;
+        
+        .pie__contenedor--redes{
+            width: 70%;
+            padding: 20px 10px;
+            margin: auto;
+            text-align: center;
+            border-bottom: 3px $colorGrisClaro solid;
+
+            ul{
+                margin-top: 20px;
+                li{
+                    display: inline-block;
+
+                    img{
+                        height: 20px;
+                        margin: 10px;
+                        opacity: 0.5;
+                        &:hover{
+                            opacity: 1;
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+            }
+        }
+
+        .pie__contenedor--copyright{
+            background-color: $colorNegro;
+            padding-top: 20px;
+            width: 100%;
+            height: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .pie{
+        margin-top: 50px ;
+    }
+}

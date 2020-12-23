@@ -5,8 +5,7 @@
         justify-content: space-between;
         align-content: center;
         width: 90%;
-        margin: 100px auto;
-        height: 400px;
+        margin: auto;
 
         .seccionNosotros__info{
             text-align: left;
@@ -43,6 +42,7 @@
     .seccionNosotros{
         position: relative;
         z-index: -1;
+        margin: 50px auto;
         
         .seccionNosotros__contenedor{
             flex-direction: column;
