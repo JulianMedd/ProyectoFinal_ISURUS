@@ -341,11 +341,11 @@ p span {
 .integrantesSeccion .integrantesSeccion__contenedor article:hover h3 {
   color: #ffffff;
 }
+.integrantesSeccion .integrantesSeccion__contenedor article:hover img {
+  transform: scale(1.1);
+}
 .integrantesSeccion .integrantesSeccion__contenedor article img {
   border-radius: 50%;
-}
-.integrantesSeccion .integrantesSeccion__contenedor article img:hover {
-  transform: scale(1.1);
 }
 .integrantesSeccion .integrantesSeccion__contenedor article h3 {
   color: #0692f2;
@@ -369,14 +369,28 @@ p span {
   }
 }
 @media screen and (max-width: 600px) {
+  .integrantesPortada {
+    height: 180px;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: -1;
+  }
   .integrantesPortada h1 {
     font-size: 250%;
   }
 
+  .integrantesSeccion {
+    position: relative;
+    z-index: -1;
+  }
   .integrantesSeccion .integrantesSeccion__contenedor {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .integrantesSeccion .integrantesSeccion__contenedor article {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 32px;
   }
 }
