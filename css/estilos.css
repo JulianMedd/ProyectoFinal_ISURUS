@@ -298,3 +298,85 @@ p span {
     border-radius: 2%;
   }
 }
+.integrantesPortada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Imagenes/portadaIntegrantes.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+.integrantesPortada h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.integrantesSeccion .integrantesSeccion__contenedor {
+  display: flex;
+  align-items: stretch;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10%;
+}
+.integrantesSeccion .integrantesSeccion__contenedor article {
+  width: 20%;
+  padding: 2%;
+  margin: 0px 10px;
+  text-align: center;
+  border-radius: 3%;
+  transition: box-shadow, background-color 1.5s;
+}
+.integrantesSeccion .integrantesSeccion__contenedor article:hover {
+  box-shadow: 0.3em 0.2em 1em rgba(128, 128, 128, 0.65);
+  background-color: #0064a7;
+}
+.integrantesSeccion .integrantesSeccion__contenedor article:hover p {
+  color: #ffffff;
+}
+.integrantesSeccion .integrantesSeccion__contenedor article:hover h3 {
+  color: #ffffff;
+}
+.integrantesSeccion .integrantesSeccion__contenedor article img {
+  border-radius: 50%;
+}
+.integrantesSeccion .integrantesSeccion__contenedor article img:hover {
+  transform: scale(1.1);
+}
+.integrantesSeccion .integrantesSeccion__contenedor article h3 {
+  color: #0692f2;
+  margin: 5% 0%;
+}
+.integrantesSeccion .integrantesSeccion__contenedor article p {
+  color: #282828;
+}
+
+@media screen and (max-width: 1000px) {
+  .integrantesPortada h1 {
+    font-size: 300%;
+  }
+
+  .integrantesSeccion .integrantesSeccion__contenedor {
+    flex-wrap: wrap;
+  }
+  .integrantesSeccion .integrantesSeccion__contenedor article {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .integrantesPortada h1 {
+    font-size: 250%;
+  }
+
+  .integrantesSeccion .integrantesSeccion__contenedor {
+    flex-direction: column;
+  }
+  .integrantesSeccion .integrantesSeccion__contenedor article {
+    width: 100%;
+  }
+}
