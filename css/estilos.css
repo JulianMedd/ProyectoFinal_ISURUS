@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -392,5 +393,174 @@ p span {
     width: 80%;
     margin: auto;
     margin-bottom: 32px;
+  }
+}
+.mediaFoto .mediaFoto__contenedor {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--titulo {
+  color: #0692f2;
+  text-align: center;
+  margin-bottom: 32px;
+  border-bottom: 5px #474747 solid;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3px;
+  grid-template-areas: "img1 img1 img2 img3" "img4 img5 img6 img6" "img7 img8 img9 img10";
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: img1;
+  background-image: url("../Imagenes/2018_01_art_4_1_845.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: img2;
+  background-image: url("../Imagenes/15218375632287.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: img3;
+  background-image: url("../Imagenes/15578457252786.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img4;
+  background-image: url("../Imagenes/esport.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: img5;
+  background-image: url("../Imagenes/Esports10-1-e1556879769378-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-area: img6;
+  background-image: url("../Imagenes/Competicion-League-of-Legends_1125497463_65706_1440x600.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img7 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: img7;
+  background-image: url(../Imagenes/2017101810304358776.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img8 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: img8;
+  background-image: url(../Imagenes/isurusworldsplaying.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img9 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: img9;
+  background-image: url(../Imagenes/La-final-de-Liga-Movistar-Latinoamérica-de-LoL-Toda-una-experiencia_la_vida_es_un_videojuego_blog_9.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img10 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+  grid-area: img10;
+  background-image: url(../Imagenes/unnamed.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid div {
+  border-radius: 10px;
+  opacity: 0.7;
+  transition: transform 1s, opacity 1s;
+}
+.mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid div:hover {
+  transform: scale(1.1);
+  box-shadow: 0.3em 0.2em 1em rgba(128, 128, 128, 0.65);
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .mediaFoto .mediaFoto__contenedor {
+    width: 95%;
+    margin: auto;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px;
+    grid-template-areas: "img2 img3" "img1 img1" "img4 img5" "img6 img6" "img7 img8" "img9 img10";
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid div {
+    opacity: 1;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img4 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img6 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img7 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img8 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img9 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+  }
+  .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img10 {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
   }
 }

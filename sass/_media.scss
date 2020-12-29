@@ -1,0 +1,134 @@
+.mediaFoto{
+    .mediaFoto__contenedor{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        .mediaFoto__contenedor--titulo{
+            color: $colorAzul;
+            text-align: center;
+            margin-bottom: 32px;
+            border-bottom: 5px $colorGrisClaro solid;
+        }
+        .mediaFoto__contenedor--grid{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 3px;
+            grid-template-areas:
+                "img1 img1 img2 img3"
+                "img4 img5 img6 img6"
+                "img7 img8 img9 img10";
+              
+              
+            .img1 {
+                grid-area: img1;
+                background-image: url("../Imagenes/2018_01_art_4_1_845.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img2 {
+                grid-area: img2;
+                background-image: url("../Imagenes/15218375632287.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img3 {
+                grid-area: img3;
+                background-image: url("../Imagenes/15578457252786.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img4 {
+                grid-area: img4;
+                background-image: url("../Imagenes/esport.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img5 {
+                grid-area: img5;
+                background-image: url("../Imagenes/Esports10-1-e1556879769378-1.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img6 {
+                grid-area: img6;
+                background-image: url("../Imagenes/Competicion-League-of-Legends_1125497463_65706_1440x600.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img7 {
+                grid-area: img7;
+                background-image: url(../Imagenes/2017101810304358776.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img8 {
+                grid-area: img8;
+                background-image: url(../Imagenes/isurusworldsplaying.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img9 {
+                grid-area: img9;
+                background-image: url(../Imagenes/La-final-de-Liga-Movistar-Latinoamérica-de-LoL-Toda-una-experiencia_la_vida_es_un_videojuego_blog_9.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .img10 {
+                grid-area: img10;
+                background-image: url(../Imagenes/unnamed.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            div{
+                border-radius: 10px;
+                opacity: 0.7;
+                transition: transform 1s, opacity 1s;
+            }
+
+            div:hover{
+                transform: scale(1.1);
+                box-shadow: $sombra;
+                opacity: 1;
+            }
+              
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px){
+    .mediaFoto{
+        .mediaFoto__contenedor{
+            width: 95%;
+            margin: auto;
+            .mediaFoto__contenedor--grid{
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 3px;
+                grid-template-areas:
+                    "img2 img3"
+                    "img1 img1" 
+                    "img4 img5"
+                    "img6 img6"
+                    "img7 img8"
+                    "img9 img10";
+                
+                div{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+[33mcommit 20aa88de7fcf61a59587f2b34f9c08e395b6ec4c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Wed Dec 23 23:20:21 2020 -0300
+
+    mejorando el responsive
+
+[33mcommit 02d0d63e053a232f85ea08396354988dc0989c38[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Wed Dec 23 22:42:42 2020 -0300
+
+    agregando la seccion conocenos con los integrantes
+
+[33mcommit 311e81623302ad161b5231ebad25a8668cf72800[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Wed Dec 23 01:09:47 2020 -0300
+
+    agregue el footer a todas las secciones, agregue el favicon
+
+[33mcommit c894afb287640ee9d9dfa8bfbe2b94820e11cc21[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Tue Dec 22 23:01:50 2020 -0300
+
+    creacion del footer
+
+[33mcommit 276d71080bdebfc7fdccd0916f06952bb219791d[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Tue Dec 22 13:03:32 2020 -0300
+
+    proliando el menu responsive
+
+[33mcommit 85725973721ae7bc44ac4b641a0bbffdf7c65738[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Tue Dec 22 12:59:39 2020 -0300
+
+    otra vez reparando el menu
+
+[33mcommit 97d82cab1c0f143825f85af1b5bbaf5aa1c5a9a0[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Tue Dec 22 12:54:29 2020 -0300
+
+    repare el menu responsive
+
+[33mcommit cbfb8a1a939d41c4a5b6d0664df4a1fc4480a7c5[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Tue Dec 22 00:17:43 2020 -0300
+
+    arreglando el responsive
+
+[33mcommit 8c175b64697652ff5a375d3b778dd98c0fb1c4fc[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Mon Dec 21 23:53:20 2020 -0300
+
+    mejore los responsive
+
+[33mcommit 4eb3628cf97b83612a1f616e4f39edeb85c356a6[m
+Merge: 67d7972 4a82a9c
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Mon Dec 21 22:34:09 2020 -0300
+
+    Merge branch 'inicio' into main
+
+[33mcommit 67d797231a71b09a1dcde4171dfc89c7487de5b1[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Mon Dec 21 22:31:45 2020 -0300
+
+    nose
+
+[33mcommit 4a82a9c7ab9f81dc181c50e4092f8a197f2526a7[m[33m ([m[1;32minicio[m[33m)[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Mon Dec 21 22:27:19 2020 -0300
+
+    se termino la seccion inicio, con animacion
+
+[33mcommit 00a4fd1a153186e08f774d8a2600b48783c0832c[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Thu Dec 17 20:35:41 2020 -0300
+
+    menu responsive
+
+[33mcommit de66cf963833fe178c6300bf3b2a33f34f835c94[m
+Author: Julian Med <julian.medina7@hotmail.com.ar>
+Date:   Wed Dec 16 15:19:34 2020 -0300
+
+    agregando el header en html
