@@ -1,4 +1,6 @@
 .mediaFoto{
+    margin-bottom: 50px;
+    padding-top: 100px;
     .mediaFoto__contenedor{
         width: 90%;
         margin: auto;
@@ -110,6 +112,8 @@
 
 @media screen and (max-width: 600px){
     .mediaFoto{
+        position: relative;
+        z-index: -1;
         .mediaFoto__contenedor{
             width: 95%;
             margin: auto;

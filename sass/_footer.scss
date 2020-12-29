@@ -1,5 +1,4 @@
 .pie{
-    margin-top: 100px;
     background-color: $colorGrisOscuro;
     color: $colorBlanco;
     border-top: 3px $colorBlanco solid;
@@ -44,5 +43,23 @@
 @media screen and (max-width: 1000px){
     .pie{
         margin-top: 50px ;
+        
+    }
+}
+
+@media screen and (max-width: 600px){
+    .pie{
+        .pie__contenedor{
+            width: 95%;
+            margin: auto;
+
+            .pie__contenedor--redes{
+                width: 100%;
+                
+            }
+            .pie__contenedor--copyright{
+                width: 100%;
+            }
+        }
     }
 }

@@ -1,7 +1,11 @@
 #cabecera{
     background-color: $colorGrisOscuro;
     border-bottom: 5px solid $colorAzulOscuro;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
     .cabecera__contenedor{
         display: flex;
         width: 90%;

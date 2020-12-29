@@ -34,7 +34,6 @@ p span {
 }
 
 .pie {
-  margin-top: 100px;
   background-color: #282828;
   color: #ffffff;
   border-top: 3px #ffffff solid;
@@ -76,9 +75,26 @@ p span {
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 600px) {
+  .pie .pie__contenedor {
+    width: 95%;
+    margin: auto;
+  }
+  .pie .pie__contenedor .pie__contenedor--redes {
+    width: 100%;
+  }
+  .pie .pie__contenedor .pie__contenedor--copyright {
+    width: 100%;
+  }
+}
 #cabecera {
   background-color: #282828;
   border-bottom: 5px solid #0064a7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 #cabecera .cabecera__contenedor {
   display: flex;
@@ -193,6 +209,9 @@ p span {
   background-repeat: no-repeat;
 }
 
+#seccionInicio {
+  padding-top: 140px;
+}
 #seccionInicio .seccionInicio__contenedor {
   margin: 100px auto;
   text-align: center;
@@ -238,6 +257,7 @@ p span {
 }
 .seccionNosotros {
   margin: 150px 0px;
+  padding-top: 70px;
 }
 .seccionNosotros .seccionNosotros__contenedor {
   display: flex;
@@ -300,6 +320,7 @@ p span {
   }
 }
 .integrantesPortada {
+  padding-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,13 +329,10 @@ p span {
   background-size: cover;
   height: 240px;
   margin-bottom: 32px;
-  color: #ffffff;
 }
 .integrantesPortada h1 {
   text-align: center;
   color: #ffffff;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .integrantesSeccion .integrantesSeccion__contenedor {
@@ -394,6 +412,10 @@ p span {
     margin: auto;
     margin-bottom: 32px;
   }
+}
+.mediaFoto {
+  margin-bottom: 50px;
+  padding-top: 100px;
 }
 .mediaFoto .mediaFoto__contenedor {
   width: 90%;
@@ -508,6 +530,10 @@ p span {
 }
 
 @media screen and (max-width: 600px) {
+  .mediaFoto {
+    position: relative;
+    z-index: -1;
+  }
   .mediaFoto .mediaFoto__contenedor {
     width: 95%;
     margin: auto;
@@ -562,5 +588,100 @@ p span {
   .mediaFoto .mediaFoto__contenedor .mediaFoto__contenedor--grid .img10 {
     -ms-grid-row: 11;
     -ms-grid-column: 3;
+  }
+}
+.cabeceraContacto {
+  padding-top: 70px;
+  background-image: url(../Imagenes/portadaIntegrantes.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cabeceraContacto .cabeceraContacto__titulo {
+  text-align: center;
+  color: #ffffff;
+}
+
+.seccionContacto .seccionContacto__contenedor {
+  width: 90%;
+  margin: auto;
+  padding: 32px 0px;
+  display: flex;
+  align-items: center;
+  align-items: stretch;
+}
+.seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--formulario {
+  width: 50%;
+}
+.seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--formulario .datosContacto {
+  display: block;
+  width: 100%;
+  margin: 16px 0;
+  border: 0;
+  background: #474747;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--formulario .datosContacto:hover {
+  box-shadow: 0.3em 0.2em 1em rgba(128, 128, 128, 0.65);
+}
+.seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--formulario .btn {
+  border: 0;
+  background: #474747;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--formulario .btn:hover {
+  background: #0692f2;
+}
+.seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--info {
+  width: 50%;
+  padding-left: 64px;
+}
+.seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--info p {
+  margin: 32px 0px;
+  color: #474747;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .cabeceraContacto {
+    position: relative;
+    z-index: -1;
+  }
+  .cabeceraContacto .cabeceraContacto__titulo {
+    font-size: 300%;
+  }
+
+  .seccionContacto {
+    position: relative;
+    z-index: -1;
+  }
+  .seccionContacto .seccionContacto__contenedor {
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--formulario {
+    width: 100%;
+  }
+  .seccionContacto .seccionContacto__contenedor .seccionContacto__contenedor--info {
+    text-align: center;
+    margin: auto;
+    padding-left: 0px;
+    width: 100%;
+    border-top: 2px #474747 solid;
+    margin-top: 32px;
   }
 }
