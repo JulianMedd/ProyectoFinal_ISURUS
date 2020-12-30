@@ -69,12 +69,19 @@
     }
 }
 
+@media screen and (max-width: 1000px){
+    .cabeceraContacto{
+        padding-top: 140px;
+    }
+}
+
 @media screen and (max-width: 600px){
     .cabeceraContacto{
+        padding-top: 70px;
         position: relative;
         z-index: -1;
         .cabeceraContacto__titulo{
-            font-size: 300%;
+            font-size: 240%;
         }
     }
     .seccionContacto{

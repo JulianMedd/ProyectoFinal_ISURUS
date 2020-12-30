@@ -62,6 +62,7 @@
 
 @media screen and (max-width: 1000px){
     .integrantesPortada{
+        padding-top: 140px;
         h1{
             font-size: 300%;
         }
@@ -69,6 +70,8 @@
     .integrantesSeccion{
         .integrantesSeccion__contenedor{
             flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
             article{
                 width: 40%;
                 margin-bottom: 20px;
@@ -79,6 +82,7 @@
 
 @media screen and (max-width: 600px){
     .integrantesPortada{
+        padding-top: 70px;
         height: 180px;
         margin-bottom: 32px;
         position: relative;

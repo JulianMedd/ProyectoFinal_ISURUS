@@ -60,6 +60,7 @@
 @media screen and (max-width: 1000px){
     #cabecera{
         height: 130px;
+        width: 100%;
         .cabecera__contenedor{
             flex-direction: column;
             padding: 15px 0px;
@@ -78,6 +79,7 @@
 @media screen and (max-width: 600px){
     #cabecera{
         height: 70px;
+        width: 100%;
         .cabecera__contenedor{
             flex-direction: row;
 

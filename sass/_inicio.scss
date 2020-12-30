@@ -7,7 +7,7 @@
 }
 
 #seccionInicio{
-    padding-top: 140px;
+    padding-top: 100px;
     .seccionInicio__contenedor{
         margin: 100px auto;
         text-align: center;
@@ -42,7 +42,7 @@
     }
 
     #seccionInicio{
-        margin-top: 50px;
+        padding-top: 180px;
         .seccionInicio__contenedor{
             width: 90%;
             margin: auto;
@@ -60,6 +60,28 @@
 
                 p{
                     width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    #seccionInicio{
+        padding-top: 100px;
+        .seccionInicio__contenedor{
+            width: 95%;
+            margin: auto;
+
+            .seccionInicio__img{
+                img{
+                    width: 50%;
+                }
+            }
+
+            .seccionInicio__texto{
+                h1{
+                    font-size: 250%;
                 }
             }
         }

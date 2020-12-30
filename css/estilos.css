@@ -137,6 +137,7 @@ p span {
 @media screen and (max-width: 1000px) {
   #cabecera {
     height: 130px;
+    width: 100%;
   }
   #cabecera .cabecera__contenedor {
     flex-direction: column;
@@ -150,6 +151,7 @@ p span {
 @media screen and (max-width: 600px) {
   #cabecera {
     height: 70px;
+    width: 100%;
   }
   #cabecera .cabecera__contenedor {
     flex-direction: row;
@@ -210,7 +212,7 @@ p span {
 }
 
 #seccionInicio {
-  padding-top: 140px;
+  padding-top: 100px;
 }
 #seccionInicio .seccionInicio__contenedor {
   margin: 100px auto;
@@ -239,7 +241,7 @@ p span {
   }
 
   #seccionInicio {
-    margin-top: 50px;
+    padding-top: 180px;
   }
   #seccionInicio .seccionInicio__contenedor {
     width: 90%;
@@ -253,6 +255,21 @@ p span {
   }
   #seccionInicio .seccionInicio__contenedor .seccionInicio__texto p {
     width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #seccionInicio {
+    padding-top: 100px;
+  }
+  #seccionInicio .seccionInicio__contenedor {
+    width: 95%;
+    margin: auto;
+  }
+  #seccionInicio .seccionInicio__contenedor .seccionInicio__img img {
+    width: 50%;
+  }
+  #seccionInicio .seccionInicio__contenedor .seccionInicio__texto h1 {
+    font-size: 250%;
   }
 }
 .seccionNosotros {
@@ -292,9 +309,7 @@ p span {
 
 @media screen and (max-width: 1000px) {
   .seccionNosotros {
-    position: relative;
-    z-index: -1;
-    margin: 50px auto;
+    padding-top: 70px;
   }
   .seccionNosotros .seccionNosotros__contenedor {
     flex-direction: column;
@@ -307,7 +322,7 @@ p span {
     margin: auto;
   }
   .seccionNosotros .seccionNosotros__contenedor .seccionNosotros__info h1 {
-    font-size: 300%;
+    font-size: 400%;
   }
   .seccionNosotros .seccionNosotros__contenedor .seccionNosotros__img {
     width: 95%;
@@ -317,6 +332,21 @@ p span {
     width: 100%;
     margin: 80px auto;
     border-radius: 2%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .seccionNosotros {
+    position: relative;
+    z-index: -1;
+    margin: 50px auto;
+  }
+  .seccionNosotros .seccionNosotros__contenedor {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  .seccionNosotros .seccionNosotros__contenedor .seccionNosotros__info h1 {
+    font-size: 250%;
   }
 }
 .integrantesPortada {
@@ -375,12 +405,17 @@ p span {
 }
 
 @media screen and (max-width: 1000px) {
+  .integrantesPortada {
+    padding-top: 140px;
+  }
   .integrantesPortada h1 {
     font-size: 300%;
   }
 
   .integrantesSeccion .integrantesSeccion__contenedor {
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .integrantesSeccion .integrantesSeccion__contenedor article {
     width: 40%;
@@ -389,6 +424,7 @@ p span {
 }
 @media screen and (max-width: 600px) {
   .integrantesPortada {
+    padding-top: 70px;
     height: 180px;
     margin-bottom: 32px;
     position: relative;
@@ -529,8 +565,14 @@ p span {
   opacity: 1;
 }
 
+@media screen and (max-width: 1000px) {
+  .mediaFoto {
+    padding-top: 140px;
+  }
+}
 @media screen and (max-width: 600px) {
   .mediaFoto {
+    padding-top: 90px;
     position: relative;
     z-index: -1;
   }
@@ -652,13 +694,19 @@ p span {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1000px) {
+  .cabeceraContacto {
+    padding-top: 140px;
+  }
+}
 @media screen and (max-width: 600px) {
   .cabeceraContacto {
+    padding-top: 70px;
     position: relative;
     z-index: -1;
   }
   .cabeceraContacto .cabeceraContacto__titulo {
-    font-size: 300%;
+    font-size: 240%;
   }
 
   .seccionContacto {
